@@ -7,6 +7,14 @@
     --footer-color-1: hsl(340, 75%, 45%);
     --footer-color-2: hsl(280, 65%, 45%);
     --footer-color-3: hsl(200, 80%, 45%);
+    --color-acento-hover: hsl(332, 90%, 65%);
+    --color-acento-hover-oscuro: hsl(332, 80%, 45%);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 
 body{
@@ -15,7 +23,6 @@ body{
     line-height: 1.5;
     color: var(--color-texto);
     background-color: var(--color-fondo);
-    box-sizing: border-box;
 }
 
 .hero{
@@ -98,11 +105,11 @@ body{
 }
 
 .btn-comprar:hover{
-    background-image: radial-gradient(circle at 30% 30%, hsl(332, 90%, 65%), hsl(332, 80%, 45%) 70%);
+    background-image: radial-gradient(circle at 30% 30%, var(--color-acento-hover), var(--color-acento-hover-oscuro) 70%);
 }
 
 .site-footer{
-    background-image: linear-gradient(100deg, var(--footer-color-1), var(--footer-color-2), var(--footer-color-3));
+    background-image: linear-gradient(90deg, var(--footer-color-1), var(--footer-color-2), var(--footer-color-3));
     color: hsl(0, 0%, 100%);
     text-align: center;
     padding: 1.5rem;
